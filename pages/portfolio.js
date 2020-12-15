@@ -3,7 +3,7 @@ import Main from "../layouts/Main";
 
 const portfolio = () => {
   return (
-    <Main heightDisplay="h-full">
+    <Main heightDisplay="h-full" title="Portfolio">
       <div className="w-full h-full py-28 px-48 flex flex-row">
         <div className="w-full text-white ">
           <h2 className="text-3xl font-bold">My Portfolio</h2>

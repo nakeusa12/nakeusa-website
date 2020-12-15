@@ -29,7 +29,7 @@ const Header = () => {
         </nav>
       </header>
 
-      <nav className="absolute w-72 h-screen hidden flex-col justify-between bg-gray-50 rounded-r-xl py-10 px-6">
+      <nav className="w-72 h-full hidden flex-col justify-between bg-gray-50 rounded-r-xl py-10 px-6 z-50 fixed">
         <div className="flex w-full justify-between">
           <h1 className="text-2xl font-medium">WELCOME</h1>
           <div className="cursor-pointer">
@@ -72,6 +72,9 @@ const Header = () => {
           </Link>
           <Link href="/portfolio">
             <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Portfolio</a>
+          </Link>
+          <Link href="/blog">
+            <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Blog</a>
           </Link>
         </ul>
 
