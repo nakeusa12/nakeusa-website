@@ -1,95 +1,169 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 // Import react scroll
 // import { Link as LinkScroll } from "react-scroll";
 // import ButtonOutline from "../misc/ButtonOutline.";
+import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
+import { FiTwitter, FiGithub } from "react-icons/fi";
+
 
 const Header = () => {
-  // const [activeLink, setActiveLink] = useState(null);
+  
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen)
+
   return (
     <>
-      <header className="fixed">
-        <nav className="max-w-screen-xl px-6 sm:px-10 lg:px-20 mx-auto grid grid-flow-col py-10">
-          <div className="cursor-pointer">
+      <nav className="flex fixed w-full items-center justify-between px-6 h-24 text-white z-10">
+        <div className="flex items-center ml-6">
+          <button className="mr-2" aria-label="Open Menu" onClick={toggle}>
             <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="30" height="5" rx="2.5" fill="#F3F3F3" />
-              <rect y="10" width="30" height="5" rx="2.5" fill="#F3F3F3" />
-              <rect y="20" width="30" height="5" rx="2.5" fill="#F3F3F3" />
-            </svg>
-          </div>
-          <h1 className="text-gray-100 text-3xl absolute top-9 ml-12 font-medium">
-            WELCOME
-          </h1>
-        </nav>
-      </header>
-
-      <nav className="w-72 h-full hidden flex-col justify-between bg-gray-50 rounded-r-xl py-10 px-6 z-50 fixed">
-        <div className="flex w-full justify-between">
-          <h1 className="text-2xl font-medium">WELCOME</h1>
-          <div className="cursor-pointer">
-            <svg
-              width="20"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.82825 1.78489L15.3388 10.6482C16.4556 11.9662 16.2798 13.9428 14.948 15.043C13.6571 16.1094 11.7526 15.9582 10.6462 14.7014L2.96947 5.98162C1.51401 4.32842 2.11768 1.734 4.15346 0.893137C5.44207 0.360883 6.92692 0.721208 7.82825 1.78489Z"
-                fill="black"
-              />
-              <path
-                d="M22.1717 28.2151L14.6612 19.3518C13.5444 18.0338 13.7202 16.0572 15.052 14.957C16.3429 13.8906 18.2474 14.0418 19.3538 15.2986L27.0305 24.0184C28.486 25.6716 27.8823 28.266 25.8465 29.1069C24.5579 29.6391 23.0731 29.2788 22.1717 28.2151Z"
-                fill="black"
-              />
-              <path
-                d="M22.1717 1.78489L14.6612 10.6482C13.5444 11.9662 13.7202 13.9428 15.052 15.043C16.3429 16.1094 18.2474 15.9582 19.3538 14.7014L27.0305 5.98162C28.486 4.32842 27.8823 1.734 25.8465 0.893137C24.5579 0.360883 23.0731 0.721208 22.1717 1.78489Z"
-                fill="black"
-              />
-              <path
-                d="M7.82825 28.2151L15.3388 19.3518C16.4556 18.0338 16.2798 16.0572 14.948 14.957C13.6571 13.8906 11.7526 14.0418 10.6462 15.2986L2.96947 24.0184C1.51401 25.6716 2.11768 28.266 4.15346 29.1069C5.44207 29.6391 6.92692 29.2788 7.82825 28.2151Z"
-                fill="black"
-              />
-            </svg>
-          </div>
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            class="w-8 h-8"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          </button>
+          <h1 className="text-2xl font-medium font-sans">Hello</h1>
         </div>
 
-        <ul className="flex w-full flex-col text-black-500">
-          <Link href="/">
-            <a className="tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Home</a>
-          </Link>
-          <Link href="/about">
-            <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">About</a>
-          </Link>
-          <Link href="/skills">
-            <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Skills</a>
-          </Link>
-          <Link href="/portfolio">
-            <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Portfolio</a>
-          </Link>
-          <Link href="/blog">
-            <a className="mt-8 tracking-widest cursor-pointer font-base text-gray-500 hover:text-gray-900 hover:font-medium uppercase">Blog</a>
-          </Link>
-        </ul>
 
-        <div className="flex flex-row w-full">
-          <Link href="#" >
-            <a className="mr-4">TY</a>
-          </Link>
-          <Link href="#">
-            <a className="mr-4">IX</a>
-          </Link>
-          <Link href="#">
-            <a className="mr-4">UT</a>
-          </Link>
-        </div>
+        <aside className={`transform top-0 left-0 w-56 text-gray-800 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-300 z-30 ${isOpen ? 'block': 'hidden'}`}>
+
+          <div className="flex w-full flex-col justify-between h-screen">
+
+            <div className="flex w-full items-center justify-between p-5 border-b">
+              <span>
+                <h1 className="text-2xl font-medium font-sans">Nakeusa</h1>
+              </span>
+              <div className="mt-2 cursor-pointer" onClick={toggle} >
+                <svg fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+              </div>
+            </div>
+           
+            <ul classname="h-full">
+              <Link href="/">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                <span className="mr-2">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      ></path>
+                    </svg>
+                </span>
+                <span>Home</span>
+              </a>
+              </Link>
+              <Link href="/about">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                  <span className="mr-2">
+                    <svg fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </span>
+                  <span>About</span>
+                </a>
+              </Link>           
+              <Link href="/skills">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                  <span className="mr-2">
+                    <svg fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                    </svg>
+                  </span>
+                  <span>Skills</span>
+                </a>
+              </Link>
+              <Link href="/portfolio">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                <span className="mr-2">
+                    <svg fill="none"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </span>
+                <span>Portfolio</span>
+              </a>
+              </Link>
+              <Link href="/blog">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                <span className="mr-2">
+                  <svg fill="none"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </span>
+                <span>Blog</span>
+              </a>
+              </Link>
+              <Link href="/contact">
+                <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
+                <span className="mr-2">
+                  <svg fill="none"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                </span>
+                <span>Contact</span>
+              </a>
+              </Link>
+            </ul>
+            
+            <div className="flex w-full items-end p-4 justify-between border-t">
+              <a href="!#"><AiOutlineInstagram className="text-2xl text-gray-800 text-opacity-50 hover:text-opacity-100" /></a>
+              <a href="!#"><FiTwitter className="text-2xl text-gray-800 text-opacity-50 hover:text-opacity-100" /></a>
+              <a href="!#"><AiOutlineFacebook className="text-2xl text-gray-800 text-opacity-50 hover:text-opacity-100"  /></a>
+              <a href="!#"><FiGithub className="text-2xl text-gray-800 text-opacity-50 hover:text-opacity-100" /></a>
+            </div>
+          
+          </div>
+        </aside>
+
+
       </nav>
+      
 
       {/* Mobile Navigation */}
       {/* <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
