@@ -10,31 +10,7 @@ const portfolio = () => {
           <h3 className="text-xl">RECENT PROJECT</h3>
           <div className="pt-20 w-full grid gap-4 grid-cols-3">
             <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
-            </div>
-            <div className="bg-gray-200 h-56 text-black w-full flex flex-col text-center justify-center">
-              TES 1
+              <img src="/images/portfolioExample.png" className="object-cover w-full h-full" alt=""/>
             </div>
           </div>
         </div>
