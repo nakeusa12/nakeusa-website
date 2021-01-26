@@ -9,7 +9,7 @@ const skills = () => {
           <h3 className="text-xl">DESIGN & DEVELOPMENT</h3>
           <div className="pt-20 w-full grid gap-4 grid-cols-5">
             <div className="bg-gray-200 h-48 w-full flex flex-col text-center justify-center transform scale-100 transition-transform duration-500 hover:scale-105">
-              <img src="/icons/photoshop.svg" alt="icons" />
+              <img src="/icons/photoshop.svg" alt="icons" className="w-20 h-20 flex justify-center" />
               <h4 className="text-gray-900 font-semibold mt-4">1 Year</h4>
               <span className="text-gray-800 font-normal">of experience</span>
             </div>

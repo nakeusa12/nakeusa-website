@@ -7,6 +7,7 @@ const Main = ({ children, title = 'Home' }) => {
     <div>
       <Head>
         <title>Nakeusaa | {title} </title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
       </Head>
 
       {/* header */}

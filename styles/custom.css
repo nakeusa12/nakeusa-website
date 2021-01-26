@@ -1,0 +1,27 @@
+
+
+
+/* Text Fill */
+.text-fill-transparent { -webkit-text-fill-color: transparent }
+.text-fill-black { -webkit-text-fill-color: #000 }
+
+/* Text Stroke Colors */
+.text-stroke { -webkit-text-stroke-color: #000 }
+.text-stroke-red { -webkit-text-stroke-color: red }
+.text-stroke-black { -webkit-text-stroke-color: #000 }
+.text-stroke-white { -webkit-text-stroke-color: #fff }
+
+/* Text Stroke Size */
+.text-stroke { -webkit-text-stroke-width: 1px }
+.text-stroke-0 { -webkit-text-stroke-width: 0 }
+.text-stroke-2 { -webkit-text-stroke-width: 2px }
+.text-stroke-4 { -webkit-text-stroke-width: 4px }
+.text-stroke-8 { -webkit-text-stroke-width: 8px }
+
+/* Fill Stroke */
+.paint-fsm { paint-order: fill stroke markers }
+.paint-fms { paint-order: fill markers stroke }
+.paint-sfm { paint-order: stroke fill markers }
+.paint-smf { paint-order: stroke markers fill }
+.paint-mfs { paint-order: markers fill stroke }
+.paint-msf { paint-order: markers stroke fill }

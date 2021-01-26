@@ -190,6 +190,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      display: ['Quicksand']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

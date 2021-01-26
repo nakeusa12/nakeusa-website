@@ -14,7 +14,7 @@ export default function Home() {
       <div className="w-full min-h-screen flex justify-center items-center relative">
         <div className="w-1/2 text-white">
           <h2 className="text-4xl font-bold font-custom">My Name</h2>
-          <h1 className="text-6xl font-bold font-custom">SAIFUL NAKEUSA</h1>
+          <h1 className="text-6xl text-fill-transparent text-stroke text-stroke-white text-stroke-2 paint-fsm font-bold font-custom">SAIFUL NAKEUSA</h1>
           <div className="mt-6 w-11/12 h-3 bg-gradient-to-r from-red-600 via-pink-600 to-blue-600"></div>
         </div>
         <div className="-mt-10">

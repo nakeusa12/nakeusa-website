@@ -20,11 +20,11 @@ const Header = () => {
             <svg
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             viewBox="0 0 24 24"
-            class="w-8 h-8"
+            className="w-8 h-8"
           >
             <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
 
 
-        <aside className={`transform top-0 left-0 w-56 text-gray-800 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-300 z-30 ${isOpen ? 'block': 'hidden'}`}>
+        <aside className={`transform top-0 left-0 w-56 text-gray-800 bg-white fixed h-screen overflow-auto ease-in-out transition-all duration-300 z-50 ${isOpen ? 'block': 'hidden'}`}>
 
           <div className="flex w-full flex-col justify-between h-screen">
 
@@ -43,9 +43,9 @@ const Header = () => {
               </span>
               <div className="mt-2 cursor-pointer" onClick={toggle} >
                 <svg fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
@@ -54,16 +54,16 @@ const Header = () => {
               </div>
             </div>
            
-            <ul classname="h-full">
+            <ul className="h-full flex flex-col justify-center">
               <Link href="/">
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                 <span className="mr-2">
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       viewBox="0 0 24 24"
                       className="w-6 h-6"
                     >
@@ -79,9 +79,9 @@ const Header = () => {
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                   <span className="mr-2">
                     <svg fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                       strokeLinecap="round"
+                       strokeLinejoin="round"
+                       strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
@@ -95,9 +95,9 @@ const Header = () => {
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                   <span className="mr-2">
                     <svg fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                       strokeLinecap="round"
+                       strokeLinejoin="round"
+                       strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
@@ -111,7 +111,7 @@ const Header = () => {
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                 <span className="mr-2">
                     <svg fill="none"
-                      stroke-width="2"
+                       strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
@@ -125,7 +125,7 @@ const Header = () => {
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                 <span className="mr-2">
                   <svg fill="none"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
@@ -139,7 +139,7 @@ const Header = () => {
                 <a className="flex items-center p-4 hover:bg-gray-700 hover:text-white">
                 <span className="mr-2">
                   <svg fill="none"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       className="w-6 h-6">
