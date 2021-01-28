@@ -1,3 +1,4 @@
+import Title from "../components/Title/Title";
 import Main from "../layouts/Main";
 
 const contact = () => {
@@ -5,11 +6,10 @@ const contact = () => {
     <Main heightDisplay="h-screen" title="Contact">
       <div className="w-full min-h-screen py-28 px-48 flex flex-col">
         <div className="w-full text-white">
-          <h2 className="text-3xl font-bold">My Contact</h2>
-          <h3 className="text-xl">GET IN TOUCH</h3>
+          <Title text="Get in touch" textTitle="My Contact" fontSize="text-xl" fontWeigth="font-normal" fontTitle="text-3xl" />
         </div>
         <div className="pt-16 w-full h-full grid gap-4 grid-cols-2">
-          <form class="flex flex-col w-full px-2">
+          <form class="flex flex-col w-full pr-2">
             <div class="relative mb-3">
               <label for="name" class="leading-7 text-sm text-gray-100">
                 Name

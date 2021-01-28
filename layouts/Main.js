@@ -13,7 +13,7 @@ const Main = ({ children, title = 'Home' }) => {
       {/* header */}
       <Header />
 
-      <main className="bg-gray-900 w-full min-h-screen" style={{backgroundImage: "url('/images/background.svg')"}}>
+      <main className="bg-gray-900 w-full min-h-screen font-display" style={{backgroundImage: "url('/images/background.svg')"}}>
         {children}
       </main>
     </div>

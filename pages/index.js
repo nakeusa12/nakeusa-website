@@ -2,6 +2,7 @@ import Main from "../layouts/Main"
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import { FiTwitter, FiGithub } from "react-icons/fi";
 import { useState } from "react";
+import Title from "../components/Title/Title";
 
 
 export default function Home() {
@@ -13,8 +14,7 @@ export default function Home() {
     <Main>
       <div className="w-full min-h-screen flex justify-center items-center relative">
         <div className="w-1/2 text-white">
-          <h2 className="text-4xl font-bold font-custom">My Name</h2>
-          <h1 className="text-6xl text-fill-transparent text-stroke text-stroke-white text-stroke-2 paint-fsm font-bold font-custom">SAIFUL NAKEUSA</h1>
+          <Title text="SAIFUL NAKEUSA" textTitle="My Name" fontTitle="text-3xl" fontSize="text-6xl" strokeWidth="text-stroke-2" fontWeigth="font-bold" />
           <div className="mt-6 w-11/12 h-3 bg-gradient-to-r from-red-600 via-pink-600 to-blue-600"></div>
         </div>
         <div className="-mt-10">

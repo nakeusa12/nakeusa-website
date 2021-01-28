@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Title from "../components/Title/Title";
 import Main from "../layouts/Main";
 
 const portfolio = () => {
@@ -7,8 +8,7 @@ const portfolio = () => {
     <Main heightDisplay="h-full" title="Portfolio">
       <div className="w-full h-full py-28 px-48 flex flex-row">
         <div className="w-full text-white ">
-          <h2 className="text-3xl font-bold ">My Portfolio</h2>
-          <h3 className="text-xl">RECENT PROJECT</h3>
+          <Title text="Recent Project" textTitle="My Portfolio" fontSize="text-xl" fontWeigth="font-normal" fontTitle="text-3xl" />
           <div className="pt-20 w-full grid gap-x-5 gap-y-6 grid-cols-3">
             <Link href="/">
               <div className="bg-gray-200 h-72 text-black w-full flex flex-col text-center justify-center relative cursor-pointer">

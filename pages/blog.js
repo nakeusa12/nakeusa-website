@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Title from "../components/Title/Title";
 import Main from "../layouts/Main";
 
 const blog = () => {
@@ -6,8 +7,7 @@ const blog = () => {
     <Main heightDisplay="h-full" title="Blogs">
       <div className="w-full h-full py-28 px-48 flex flex-row">
         <div className="w-full text-white">
-          <h2 className="text-3xl font-bold">My Blog</h2>
-          <h3 className="text-xl">LATEST ARTICLE</h3>
+          <Title text="Latest Article" textTitle="My Blog" fontSize="text-xl" fontWeigth="font-normal" fontTitle="text-3xl" />
           <div className="pt-20 w-full grid gap-6 grid-cols-3 z-40">
               <div className="bg-gray-200 h-96 text-black w-full flex flex-col overflow-hidden rounded ">
                 <Link href="/">

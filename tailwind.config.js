@@ -190,7 +190,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
-      display: ['Quicksand']
+      display: ['Quicksand'],
+      title: ['Nunito']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
